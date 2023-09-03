@@ -1,5 +1,5 @@
 public interface IReprodutorMusical {
     public abstract void tocar();
     public abstract void pausar();
-    public abstract void selecionarMusica();
+    public abstract void selecionarMusica(String musica);
 }
