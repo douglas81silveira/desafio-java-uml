@@ -1,3 +1,5 @@
+package models.interfaces;
+
 public interface IReprodutorMusical {
     public abstract void tocar();
     public abstract void pausar();

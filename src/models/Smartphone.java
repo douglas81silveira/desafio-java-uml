@@ -1,7 +1,18 @@
-public class Iphone implements ITelefone, IReprodutorMusical, INavegadorInternet {
+package models;
 
-    public Iphone() {
-        System.out.println("IPhone instanciado!");
+import models.interfaces.INavegadorInternet;
+import models.interfaces.IReprodutorMusical;
+import models.interfaces.ITelefone;
+
+public class Smartphone implements ITelefone, IReprodutorMusical, INavegadorInternet {
+
+    private String marca;
+    private String nome;
+
+    public Smartphone(String marca, String nome) {
+        this.marca = marca;
+        this.nome = nome;
+        System.out.println(marca + " " + nome + " instanciado!");
     }
 
     @Override
@@ -49,4 +60,11 @@ public class Iphone implements ITelefone, IReprodutorMusical, INavegadorInternet
         System.out.println("Correio de voz iniciado!");
     }
     
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getMarca() {
+        return this.marca;
+    }
 }
