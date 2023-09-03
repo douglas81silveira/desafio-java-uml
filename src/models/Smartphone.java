@@ -9,11 +9,6 @@ public class Smartphone implements ITelefone, IReprodutorMusical, INavegadorInte
     private String marca;
     private String nome;
 
-    public Smartphone() {
-        this.marca = "Smartphone";
-        this.nome = "Genérico";
-    }
-
     public Smartphone(String marca, String nome) {
         this.marca = marca;
         this.nome = nome;
